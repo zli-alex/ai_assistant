@@ -1,0 +1,467 @@
+{
+  "code": "SUCCESS",
+  "bcode": "",
+  "msg": "成功",
+  "data": [
+    {
+      "gradeDcode": "J1",
+      "courses": [
+        {
+          "name": "语文",
+          "uid": "48753",
+          "courseDcode": "CHINESE"
+        },
+        {
+          "name": "数学",
+          "uid": "48754",
+          "courseDcode": "MATH"
+        },
+        {
+          "name": "英语",
+          "uid": "48755",
+          "courseDcode": "ENGLISH"
+        },
+        {
+          "name": "生物",
+          "uid": "48758",
+          "courseDcode": "BIOLOGY"
+        },
+        {
+          "name": "地理",
+          "uid": "48761",
+          "courseDcode": "GEOGRAPHY"
+        },
+        {
+          "name": "历史",
+          "uid": "48762",
+          "courseDcode": "HISTORY"
+        },
+        {
+          "name": "信息技术",
+          "uid": "48763",
+          "courseDcode": "INFORMATION_TECHNOLOGY"
+        },
+        {
+          "name": "体育",
+          "uid": "48939",
+          "courseDcode": "SPORTS"
+        },
+        {
+          "name": "美术",
+          "uid": "48764",
+          "courseDcode": "ART"
+        },
+        {
+          "name": "音乐",
+          "uid": "48766",
+          "courseDcode": "MUSIC"
+        },
+        {
+          "name": "道法",
+          "uid": "48932",
+          "courseDcode": "MORALITY_RULE_OF_LAW"
+        },
+        {
+          "name": "劳动",
+          "uid": "48931",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "综合实践1",
+          "uid": "48937",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "综合实践2",
+          "uid": "48938",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "校本",
+          "uid": "48940",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "班队/心理",
+          "uid": "48941",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "体活",
+          "uid": "48945",
+          "courseDcode": "OTHERS"
+        }
+      ],
+      "classes": [
+        {
+          "gradeName": "初一",
+          "name": "01班",
+          "alias": "",
+          "uid": "37716",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "02班",
+          "alias": "",
+          "uid": "37686",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "03班",
+          "alias": "",
+          "uid": "37579",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "04班",
+          "alias": "",
+          "uid": "37580",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "05班",
+          "alias": "",
+          "uid": "37581",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "06班",
+          "alias": "",
+          "uid": "37582",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "07班",
+          "alias": "",
+          "uid": "37583",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "08班",
+          "alias": "",
+          "uid": "37584",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "09班",
+          "alias": "",
+          "uid": "37585",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "10班",
+          "alias": "",
+          "uid": "37586",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "11班",
+          "alias": "",
+          "uid": "37587",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初一",
+          "name": "12班",
+          "alias": "",
+          "uid": "37588",
+          "type": "OFFICIAL"
+        }
+      ]
+    },
+    {
+      "gradeDcode": "J2",
+      "courses": [
+        {
+          "name": "语文",
+          "uid": "48770",
+          "courseDcode": "CHINESE"
+        },
+        {
+          "name": "数学",
+          "uid": "48771",
+          "courseDcode": "MATH"
+        },
+        {
+          "name": "英语",
+          "uid": "48772",
+          "courseDcode": "ENGLISH"
+        },
+        {
+          "name": "物理",
+          "uid": "48773",
+          "courseDcode": "PHYSICS"
+        },
+        {
+          "name": "生物",
+          "uid": "48775",
+          "courseDcode": "BIOLOGY"
+        },
+        {
+          "name": "地理",
+          "uid": "48778",
+          "courseDcode": "GEOGRAPHY"
+        },
+        {
+          "name": "历史",
+          "uid": "48779",
+          "courseDcode": "HISTORY"
+        },
+        {
+          "name": "信息技术",
+          "uid": "48780",
+          "courseDcode": "INFORMATION_TECHNOLOGY"
+        },
+        {
+          "name": "体育",
+          "uid": "48781",
+          "courseDcode": "SPORTS"
+        },
+        {
+          "name": "美术",
+          "uid": "48782",
+          "courseDcode": "ART"
+        },
+        {
+          "name": "音乐",
+          "uid": "48785",
+          "courseDcode": "MUSIC"
+        },
+        {
+          "name": "道法",
+          "uid": "48933",
+          "courseDcode": "MORALITY_RULE_OF_LAW"
+        },
+        {
+          "name": "劳动",
+          "uid": "48934",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "综合实践",
+          "uid": "48935",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "班队/心理",
+          "uid": "48936",
+          "courseDcode": "OTHERS"
+        },
+        {
+          "name": "体活",
+          "uid": "48783",
+          "courseDcode": "OTHERS"
+        }
+      ],
+      "classes": [
+        {
+          "gradeName": "初二",
+          "name": "01班",
+          "alias": "",
+          "uid": "37589",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "02班",
+          "alias": "",
+          "uid": "37590",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "03班",
+          "alias": "",
+          "uid": "37591",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "04班",
+          "alias": "",
+          "uid": "37592",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "05班",
+          "alias": "",
+          "uid": "37593",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "06班",
+          "alias": "",
+          "uid": "37594",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "07班",
+          "alias": "",
+          "uid": "37595",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "08班",
+          "alias": "",
+          "uid": "37596",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "09班",
+          "alias": "",
+          "uid": "37597",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初二",
+          "name": "10班",
+          "alias": "",
+          "uid": "37598",
+          "type": "OFFICIAL"
+        }
+      ]
+    },
+    {
+      "gradeDcode": "J3",
+      "courses": [
+        {
+          "name": "语文",
+          "uid": "48942",
+          "courseDcode": "CHINESE"
+        },
+        {
+          "name": "数学",
+          "uid": "48943",
+          "courseDcode": "MATH"
+        },
+        {
+          "name": "英语",
+          "uid": "48944",
+          "courseDcode": "ENGLISH"
+        },
+        {
+          "name": "物理",
+          "uid": "48789",
+          "courseDcode": "PHYSICS"
+        },
+        {
+          "name": "化学",
+          "uid": "48790",
+          "courseDcode": "CHEMISTRY"
+        },
+        {
+          "name": "历史",
+          "uid": "48795",
+          "courseDcode": "HISTORY"
+        },
+        {
+          "name": "体育",
+          "uid": "48797",
+          "courseDcode": "SPORTS"
+        },
+        {
+          "name": "美术",
+          "uid": "48798",
+          "courseDcode": "ART"
+        },
+        {
+          "name": "音乐",
+          "uid": "48801",
+          "courseDcode": "MUSIC"
+        },
+        {
+          "name": "体活",
+          "uid": "48802",
+          "courseDcode": "OTHERS"
+        }
+      ],
+      "classes": [
+        {
+          "gradeName": "初三",
+          "name": "01班",
+          "alias": "",
+          "uid": "37599",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "02班",
+          "alias": "",
+          "uid": "37600",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "03班",
+          "alias": "",
+          "uid": "37601",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "04班",
+          "alias": "",
+          "uid": "37602",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "05班",
+          "alias": "",
+          "uid": "37603",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "06班",
+          "alias": "",
+          "uid": "37604",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "07班",
+          "alias": "",
+          "uid": "37605",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "08班",
+          "alias": "",
+          "uid": "37606",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "09班",
+          "alias": "",
+          "uid": "37607",
+          "type": "OFFICIAL"
+        },
+        {
+          "gradeName": "初三",
+          "name": "10班",
+          "alias": "",
+          "uid": "37608",
+          "type": "OFFICIAL"
+        }
+      ]
+    }
+  ]
+}
