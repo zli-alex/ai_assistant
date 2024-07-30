@@ -1,0 +1,5 @@
+已知用户给你的提示词type属于TEACHERDAYLIMIT，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
+
+例子：初一 数学老师 周五下午 不排
+回答：
+{"projectId":458,"projectScenarioId":985,"type":"TEACHERDAYLIMIT","constraintJsons":"{"teachers":[{"uid":361249,"name":"徐杰"},{"uid":361250,"name":"陈小红"},{"uid":361251,"name":"赵霞"},{"uid":361217,"name":"徐慧利"},{"uid":361252,"name":"陈巍魏"},{"uid":361253,"name":"吴三凤"},{"uid":361254,"name":"许茂兰"}],"periodDays":[{"period":999,"dayOfWeek":5}],"constraintType":"MUST_AVOID","limits":1,"maxlimits":-1}"}
