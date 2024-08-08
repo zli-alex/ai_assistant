@@ -1,25 +1,10 @@
 # ai_assistant
 
-## prompt params
-| Assistant    | file | temp |
-| -------- | ------- |  ------- |
-| filter  | n/a    | 0.01 |
-| summary | n/a     | 0.1 |
-| classify    | n/a    | 0.01 |
-| *2json | file search: 课程班级+教师任科 | 0.01|
+To use, please create a `.env` file in root directory and write your OpenAI API key with format:
+```.env
+OPENAI_API_KEY="<your_api_key>"
+```
 
 ## TODO's:
-- helper function:
-  - create assistant (pzh)
-    - input:
-      - txt file
-      - client
-      - input file
-    - output: assistant_id
-  - delete assistants (cyd)
-    - input:
-      - a list of assistant id's
-  - ? better return json?(cyd)
-- tests (lzf)
-  - test cases
-    - all use cases + paraphrase
+- 8/8: everyone try `COURSETIME` and `TEACHERTIME`
+- 8/10: mass produce other types

@@ -42,6 +42,8 @@ for prompt in summary:
     type = get_type(client, prompt)
     print(type)
     # further process to json
+
+
 exit(0)
 # Write the list of JSON objects to a file
 with open('output_list.json', 'w', encoding='utf-8') as file:

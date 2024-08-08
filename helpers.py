@@ -22,7 +22,7 @@ def get_filter_response(client, prompt):
     filter_instruction = file_reader("./prompt_library/preprocess_filter.txt")
     if filter_instruction == None:
         return None
-    message = get_openai_response(client, filter_instruction, prompt)
+    message = get_openai_response(client, filter_instruction, prompt) # "True" or "False"
     return message
 
 def get_summary(client, prompt):
