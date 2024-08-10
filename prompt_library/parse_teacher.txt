@@ -1,0 +1,23 @@
+请总结任课教师信息。若提示词中没有提及老师或者人名请返回None。
+如果不同词汇修饰的是同一对象，请放在同一个Teacher object中。如果不同词汇修饰的是不同对象，请放在不同的Teacher object中。
+请注意辨别，“周一”，“周二”等可能是指时间，并不是指人名。
+- Teacher:
+    - teachername: 教师人名，请不要包含“老师”、“教练”等职称。如果提示词中无人名，请填None。
+    - gradeDcode: 请填如下年级代号。如果提示词中未提及年级，请填None。
+        - J1: 表示初一
+        - J2: 表示初二
+        - J3: 表示初三
+    - coursename: 学科名称。如果提示词中未提及课程名称，请填None。
+- Grade:
+    - gradeDcode:
+        - J1: 表示初一
+        - J2: 表示初二
+        - J3: 表示初三
+    - classes: 如果没有提及班级名称，意思是要包含整个年级，请填写None。如果有指定班级，请填写。
+- Class:
+    - gradeName: 初一或初二或初三
+    - name: 班级名称，请填充至2个整数位
+        - 例："01班"
+用户提示词：初一初二 数学老师和语文李梅老师 周五第三节 必排
+提示：初一数学是相关联的一组，初二数学是相关联的一组，语文李梅是相关联的一组
+请回答：teachers=[Teacher(teachername = None, grade = Grade(gradeDcode='J1', classes=None), coursename = "数学"), Teacher(teachername = None, grade = Grade(gradeDcode='J2', classes=None), coursename = "数学"), Teacher(teachername = "李梅", grade = None, coursename = "语文")]

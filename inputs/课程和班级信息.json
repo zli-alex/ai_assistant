@@ -85,11 +85,6 @@
           "name": "班队/心理",
           "uid": "48941",
           "courseDcode": "OTHERS"
-        },
-        {
-          "name": "体活",
-          "uid": "48945",
-          "courseDcode": "OTHERS"
         }
       ],
       "classes": [
@@ -256,11 +251,6 @@
           "name": "班队/心理",
           "uid": "48936",
           "courseDcode": "OTHERS"
-        },
-        {
-          "name": "体活",
-          "uid": "48783",
-          "courseDcode": "OTHERS"
         }
       ],
       "classes": [
@@ -383,11 +373,6 @@
           "name": "音乐",
           "uid": "48801",
           "courseDcode": "MUSIC"
-        },
-        {
-          "name": "体活",
-          "uid": "48802",
-          "courseDcode": "OTHERS"
         }
       ],
       "classes": [

@@ -2,4 +2,4 @@
 
 例子：初一 语文老师 周一第六节 必排
 回答：
-{"projectId":458,"projectScenarioId":985,"type":"TEACHERTIME","constraintJsons":"{"teachers":[{"uid":361241,"name":"张怡"},{"uid":361242,"name":"陶晓菲"},{"uid":361243,"name":"常静"},{"uid":361244,"name":"陶丽"},{"uid":361245,"name":"卢凯燕"},{"uid":361237,"name":"张慧"},{"uid":361247,"name":"陶映菊"},{"uid":361248,"name":"陶丽红"}],"periodDays":[{"period":6,"dayOfWeek":1}],"constraintType":"MUST_ASSIGN","teacherType":"TEACHER"}"}
+{"periodDays":[{"period":6,"dayOfWeek":1}],"constraintType":"MUST_ASSIGN","teacherType":"TEACHER"}

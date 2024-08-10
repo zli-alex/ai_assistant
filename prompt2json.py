@@ -2,6 +2,7 @@ import os, re, json
 from dotenv import load_dotenv
 import openai
 from helpers import get_filter_response, get_summary, get_type
+from helper_generatejson import get_json
 
 # Load environment variables from .env file
 load_dotenv()
@@ -42,9 +43,10 @@ for prompt in summary:
     type = get_type(client, prompt)
     print(type)
     # further process to json
-
-
-exit(0)
+    json_list.append(get_json(client, prompt, type))
+    
 # Write the list of JSON objects to a file
 with open('output_list.json', 'w', encoding='utf-8') as file:
     json.dump(json_list, file, ensure_ascii=False, indent=4)
+
+print(json_list)
