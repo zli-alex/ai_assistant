@@ -4,14 +4,18 @@ teacher_filepath = 'inputs/教师任课信息.json'
 course_filepath = 'inputs/课程和班级信息.json'
 
 
-def get_class(grade):
+def get_class(grade, classname):
     class_list = []
     file = open(course_filepath, "r", encoding='utf-8')
     class_object = json.loads(file.read())
     for data in class_object['data']:
         for clas in data['classes']:
-            if clas['gradeName'] == grade:
-                class_list.append(clas)
+            if grade is not None and classname is None:
+                if clas['gradeName'] == grade:
+                    class_list.append(clas)
+            else:
+                if clas['name'] == classname and clas['gradeName'] == grade:
+                    class_list.append(clas)
     return class_list
 
 def get_course(grade, subject):
@@ -58,7 +62,5 @@ def get_teacher(name, grade, subject):
                 if teacher_class['course']['name'] == subject:
                     teacher_list.append(teacher_class.get('teacher', {}))
     return teacher_list
-
-print(get_course(None, '语文'))
 
       
