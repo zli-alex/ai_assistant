@@ -7,7 +7,7 @@ import pandas as pd
 import os,json
 from helper_parse import relevance_gradeclass, relevance_teacher, relevance_course
 from helper_parse import parse_gradeclass, parse_teacher, parse_course
-from helper_read_inputs import get_project_id, get_classes, get_teachers, get_courses
+from information_getter import get_class, get_course, get_teacher
 
 def str2json(answer):
     answer.replace('\\"', '"')
@@ -17,7 +17,7 @@ def str2json(answer):
     return data
 
 def get_json(client, prompt, type):
-    project_id = get_project_id("./inputs/教师任课信息.json")
+    project_id = 458
     
     data = {
         "projectId": project_id,
@@ -37,7 +37,7 @@ def get_json(client, prompt, type):
                 for curr_class in grade.classes:
                     gradeclass_constraints.append([grade.gradeDcode, curr_class.name])
         print(gradeclass_constraints)
-        data["constraintJsons"]["classes"] = get_classes("./inputs/课程和班级信息.json", gradeclass_constraints)
+        data["constraintJsons"]["classes"] = get_class()
         if len(data["constraintJsons"]["classes"]) == 0:
             data["constraintJsons"]["classes"] = get_classes("./inputs/课程和班级信息.json", gradeclass_constraints)
             
