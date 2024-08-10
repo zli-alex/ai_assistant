@@ -10,7 +10,7 @@ def relevance_gradeclass(client, prompt):
     response = client.beta.chat.completions.parse(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "请判断以下用户提示词是否有提及年级或者班级信息。是请回答True，否请回答False"},
+            {"role": "system", "content": "请判断以下用户提示词是否有提及年级或者班级信息。有提及请回答True，没有提及请回答False。用户提示词：初二3班李梅数学课在早上第四节。 请回答：True。用户提示词：张华的物理课只能上每天第九节。 请回答：False。"},
             {"role": "user", "content": prompt}
         ]
     )
@@ -20,7 +20,7 @@ def relevance_teacher(client, prompt):
     response = client.beta.chat.completions.parse(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "请判断以下用户提示词是否有提及教师人名。是请回答True，否请回答False"},
+            {"role": "system", "content": "请判断以下用户提示词是否有提及教师人名。有提及请回答True，没有提及请回答False。用户提示词：李梅数学课在早上第一节。 请回答：True。用户提示词：美术排在早上第四节。 请回答：False。"},
             {"role": "user", "content": prompt}
         ]
     )
@@ -30,7 +30,7 @@ def relevance_course(client, prompt):
     response = client.beta.chat.completions.parse(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "请判断以下用户提示词是否有提及初中学科名称或者课程名称。是请回答True，否请回答False"},
+            {"role": "system", "content": "请判断以下用户提示词中是否有包括但是不仅限于语文、体活、美术等的初中学科名称或者初中课程名称。有请回答True，没有请回答False。用户提示词：美术排在早上第四节。 请回答：True。用户提示词：初三周四第九节不排。 请回答：False。"},
             {"role": "user", "content": prompt}
         ]
     )

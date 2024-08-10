@@ -1,4 +1,5 @@
 import json 
+import pandas as pd
  
 teacher_filepath = 'inputs/教师任课信息.json'
 course_filepath = 'inputs/课程和班级信息.json'
@@ -40,6 +41,12 @@ def get_course(grade, subject):
                 for course in data['courses']:
                     if course['name'] == subject:
                         course_list.append(course)
+    if len(course_list) == 0:
+        course_list = [{
+            "name" : str(subject) + str(grade),
+            "uid" : "",
+            "courseDcode" : "OTHER_UNFOUND"
+        }]
     return course_list
 
         
@@ -50,7 +57,7 @@ def get_teacher(name, grade, subject):
     teacher_object = json.load(file)
     for data in teacher_object['data']['gradeTeacherClassList']:
         for teacher_class in data['teacherClasses']:
-            if name != None:
+            if name != None and name != "None":
                 teacher = teacher_class.get('teacher', {}) 
                 if teacher['name'] == name:
                     teacher_list.append(teacher)
@@ -63,6 +70,7 @@ def get_teacher(name, grade, subject):
             elif subject != None:
                 if teacher_class['course']['name'] == subject:
                     teacher_list.append(teacher_class.get('teacher', {}))
-    return teacher_list
+    return pd.Series(teacher_list).drop_duplicates().tolist()
 
-print(get_class('J1', None))
+if __name__ == "__main__":
+    print(get_teacher("None", "J1", '语文'))
