@@ -8,14 +8,16 @@ def get_class(grade, classname):
     class_list = []
     file = open(course_filepath, "r", encoding='utf-8')
     class_object = json.loads(file.read())
-    for data in class_object['data']:
-        for clas in data['classes']:
-            if grade is not None and classname is None:
-                if clas['gradeName'] == grade:
-                    class_list.append(clas)
-            else:
-                if clas['name'] == classname and clas['gradeName'] == grade:
-                    class_list.append(clas)
+    for data in class_object.get('data', []):
+        if grade is not None and classname is None:
+            if data.get('gradeDcode') == grade:
+                class_list.extend(data.get('classes', []))
+        elif grade is not None and classname is not None:
+            if data.get('gradeDcode') == grade:
+                for clas in data.get('classes', []):
+                    if clas.get('name') == classname:
+                        class_list.append(clas)
+    
     return class_list
 
 def get_course(grade, subject):
@@ -63,4 +65,4 @@ def get_teacher(name, grade, subject):
                     teacher_list.append(teacher_class.get('teacher', {}))
     return teacher_list
 
-      
+print(get_class('J1', None))
