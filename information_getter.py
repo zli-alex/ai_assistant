@@ -72,5 +72,47 @@ def get_teacher(name, grade, subject):
                     teacher_list.append(teacher_class.get('teacher', {}))
     return pd.Series(teacher_list).drop_duplicates().tolist()
 
+def get_teachercourse(name, grade, subject):
+    courses_teacher_list = []
+    file = open(teacher_filepath, "r", encoding='utf-8')
+    teacher_object = json.load(file)
+    for data in teacher_object['data']['gradeTeacherClassList']:
+        for teacher_class in data['teacherClasses']:
+            teacher = teacher_class.get('teacher', {}) 
+            course = teacher_class.get('course', {})
+            if name != None and name != "None" and teacher['name'] != name:
+                continue
+            elif grade != None and teacher_class['gradeDecode'] != grade:
+                continue
+            elif subject != None and teacher_class['course']['name'] != subject:
+                continue
+            curr = [teacher, teacher_class.get("course", {})]
+            curr[1].update({
+                        "gradeDcode" : teacher_class["gradeDecode"],
+                    })
+            courses_teacher_list.append(curr)
+    print(courses_teacher_list)
+    if len(courses_teacher_list) == 0:
+        return []
+    answer = []
+    for i in range(len(courses_teacher_list)):
+        if i == 0:
+            answer.append({
+                "courses" : [courses_teacher_list[0][1]],
+                "teacher" : courses_teacher_list[0][0]
+            })
+        else:
+            if courses_teacher_list[i][0]["name"] == answer[-1]["teacher"]["name"]:
+                answer[-1]["courses"].append(courses_teacher_list[i][1])
+            else:
+                answer[-1]["courses"] = pd.Series(answer[-1]["courses"]).drop_duplicates().to_list()
+                answer.append({
+                    "courses" : [courses_teacher_list[i][1]],
+                    "teacher" : courses_teacher_list[i][0]
+                })   
+          
+    answer[-1]["courses"] = pd.Series(answer[-1]["courses"]).drop_duplicates().to_list()
+    return pd.Series(answer).drop_duplicates().to_list()
+
 if __name__ == "__main__":
     print(get_teacher("None", "J1", '语文'))

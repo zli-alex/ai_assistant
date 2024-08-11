@@ -20,7 +20,7 @@ def relevance_teacher(client, prompt):
     response = client.beta.chat.completions.parse(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "请判断以下用户提示词是否有提及教师人名。有提及请回答True，没有提及请回答False。用户提示词：李梅数学课在早上第一节。 请回答：True。用户提示词：美术排在早上第四节。 请回答：False。"},
+            {"role": "system", "content": "请判断以下用户提示词是否人名,有提及请回答True，并返回。否则请判断用户提示词是否包含“教师”等教职职称，有请回答True。如果都没有提及请回答False。用户提示词：李梅数学课在早上第一节。 请回答：True。用户提示词：美术排在早上第四节。 请回答：False。"},
             {"role": "user", "content": prompt}
         ]
     )
@@ -58,6 +58,7 @@ def parse_gradeclass(client, prompt):
             {"role": "user", "content": prompt}
         ],
         response_format=GradeClassInfo,
+        temperature=0.01
     )
 
     response = completion.choices[0].message.parsed
@@ -82,6 +83,7 @@ def parse_teacher(client, prompt):
             {"role": "user", "content": prompt}
         ],
         response_format=TeacherInfo,
+        temperature=0.01
     )
 
     response = completion.choices[0].message.parsed
@@ -105,6 +107,7 @@ def parse_course(client, prompt):
             {"role": "user", "content": prompt}
         ],
         response_format=CourseInfo,
+        temperature=0.01
     )
 
     response = completion.choices[0].message.parsed

@@ -5,7 +5,8 @@ def get_openai_response(client, instruction, prompt):
         messages=[
             {"role": "system", "content": instruction},
             {"role": "user", "content": prompt},
-        ]
+        ],
+        temperature=0.01
     )
     return response.choices[0].message.content
 
