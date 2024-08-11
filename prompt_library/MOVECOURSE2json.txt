@@ -2,4 +2,4 @@
 
 例子：初一01班生物与初一03班地理走班关联
 回答：
-{"projectId":458,"projectScenarioId":984,"type":"MOVECOURSE","constraintJsons":"{"type":"MOVECOURSE","moveCourseDetails":[{"classes":[{"name":"初一01班","uid":"37716"}],"courses":{"name":"生物","uid":"48758"}},{"classes":[{"name":"初一03班","uid":"37579"}],"courses":{"name":"地理","uid":"48761"}}]}"}
+{"type":"MOVECOURSE","moveCourseDetails":[{"classes":[{"name":"初一01班","uid":"37716"}],"courses":{"name":"生物","uid":"48758"}},{"classes":[{"name":"初一03班","uid":"37579"}],"courses":{"name":"地理","uid":"48761"}}]}
