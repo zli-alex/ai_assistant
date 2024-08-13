@@ -2,4 +2,4 @@
 
 例子：初一 数学老师 周五下午 不排
 回答：
-{"periodDays":[{"period":99,"dayOfWeek":5}],"constraintType":"MUST_AVOID","limits":1,"maxlimits":-1}"}
+{"periodDays":[{"period":99,"dayOfWeek":5}],"constraintType":"MUST_AVOID","limits":1,"maxlimits":-1}

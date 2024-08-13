@@ -25,7 +25,7 @@ if filter_status == None:
     exit(0)
 print(filter_status)
 
-if filter_status == "False":
+if filter_status == False:
     print("您的输入似乎和排课无关，请重新尝试。")
     exit(0)
 

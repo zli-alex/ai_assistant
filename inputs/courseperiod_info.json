@@ -1,0 +1,26 @@
+{
+    "code": "SUCCESS",
+    "bcode": "",
+    "msg": "成功",
+    "data": {
+    "weekdays": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+    ],
+    "totalPeriod": 10,
+    "lunchPeriod": 5,
+    "morningBreakPeriod": 0,
+    "offMorningBreak": false,
+    "afternoonPeriod": 4,
+    "nightPeriod": 0,
+    "enableSelectiveClass": false,
+    "allowMorningReadingClass": false,
+    "allowSaturdayClass": false,
+    "allowSundayClass": false,
+    "allowLunchClass": false,
+    "enableManualInsertion": false
+    }
+    }
