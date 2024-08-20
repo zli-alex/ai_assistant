@@ -1,5 +1,11 @@
 已知用户给你的提示词type属于COURSETIME，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
 
+constraintType特殊标识：
+MUST_ASSIGN：必排
+MUST_AVOID：不排
+MIN_MAX_ASSIGN：限定最多排课或者最少排课几节
+MAX_ASSIGN：限定最多排课几节
+
 例子：初一 语文 周一第九节;周二第九节不排
 回答：
-{"periodDays":[{"period":9,"dayOfWeek":1},{"period":9,"dayOfWeek":2}],"constraintType":"MUST_AVOID","limits":1,"maxlimits":-1}
+{"constraintType":"MUST_AVOID","limits":1,"maxlimits":-1}

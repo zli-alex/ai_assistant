@@ -20,7 +20,7 @@
     "allowMorningReadingClass": false,
     "allowSaturdayClass": false,
     "allowSundayClass": false,
-    "allowLunchClass": false,
+    "allowLunchClass": true,
     "enableManualInsertion": false
     }
     }

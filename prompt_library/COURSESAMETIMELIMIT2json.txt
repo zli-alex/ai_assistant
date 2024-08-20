@@ -1,6 +1,10 @@
 已知用户给你的提示词type属于COURSESAMETIMELIMIT，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-在年级信息之后可能会带有具体的班级信息，将班级信息一并返回
-例子： 初一一班表示初一的01班
+
+constraintType特殊标识：
+MUST_ASSIGN：必排
+MUST_AVOID：不排
+MIN_MAX_ASSIGN：限定最多排课或者最少排课几节
+MAX_ASSIGN：限定最多排课几节
 
 例子：初一初二 信息技术 同一节课最多2个班
 回答：

@@ -1,7 +1,7 @@
 import os, re, json
 from dotenv import load_dotenv
 import openai
-from helpers import get_asst_answer, get_summary, get_json
+from filter_summary_infotype import get_asst_answer, get_summary, get_json
 
 # Load environment variables from .env file
 load_dotenv()

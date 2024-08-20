@@ -2,4 +2,4 @@
 
 例子：钟敏 张慧 不排同一节
 回答：
-{"mutexType":"ALL","ateacher":{"name":"钟敏","uid":"361246"},"aTeacherId":"361246","acourse":null,"aCourses":[{"name":"综合实践1","uid":"48937","courseDcode":"OTHERS","grade":"J1"},{"name":"英语","uid":"48755","courseDcode":"ENGLISH","grade":"J1"}],"aCourseId":null,"bteacher":{"name":"张慧","uid":"361237"},"bTeacherId":"361237","bcourse":null,"bCourses":[{"name":"综合实践2","uid":"48938","courseDcode":"OTHERS","grade":"J1"},{"name":"语文","uid":"48753","courseDcode":"CHINESE","grade":"J1"}],"bCourseId":null,"error":false}"
+{"mutexType":"ALL"}

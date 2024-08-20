@@ -1,5 +1,8 @@
 已知用户给你的提示词type属于EVENODDLINK，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
+如果courseA是在单周，"courseAOption"为"ODD"，否则courseA是在双周，"courseAOption"为"EVEN"。
 
-例子：初二 美术(单)与音乐(双) 单双周
+例子：初二 美术(单)与音乐(双) 单双周，并且已知courseA是美术
 回答：
-{"type":"EVENODDLINK","constraintType":"MAX_ASSIGN","courseA":{"name":"美术","uid":"48782"},"courseB":{"name":"音乐","uid":"48785"},"courseAOption":"ODD"}
+{"constraintType":"MAX_ASSIGN","courseAOption":"ODD"}
+
+在回答中请假设courseA是：

@@ -14,14 +14,22 @@ pydantic 2.8.2
 
 ## Usage
 
-To use, please create a `.env` file in root directory and write your OpenAI API key with format:
-```.env
-OPENAI_API_KEY="<your_api_key>"
+To get started, please open `config.py` file and enter your OpenAI API Key:
+```python
+openai_api_key = "<Please_enter_your_OpenAIKey_here>"
+```
+Up to your demand, you can also change the input json information files, model name and temperature there.
+
+Before run, prepare your course scheduling information and put it in `inputs/input_info.json`
+```bash
+{
+    "input_info" : "<Your_course_scheduling_information_here>"
+}
 ```
 
-To run, enter the following code in terminal:
-```bash
-python3 ./prompt2json.py
+And then, you can run:
+```
+python3 schedule_chatbot.py
 ```
 
 And then, you would enter course scheduling information in chinese when prompted:
@@ -39,18 +47,20 @@ And then, you would enter course scheduling information in chinese when prompted
        'courseHour', 'evenOddHours', 'isMultiClass', 'code', 'coursename',
        'courseuid', 'coursecourseDcode', **'teachername'**, 'teacheruid',
        'clazzname', 'clazzuid']
-- [ ] pass teacher names to openai (lzf)
+- [x] pass teacher names to openai (lzf)
   - if teacher DNE
-- [ ] pass courses names to openai (lzf)
+- [x] pass courses names to openai (lzf)
   - if coureses DNE
 - [x] structured output if we demand True/False
 - [ ] special cases:
-  - [ ] CONSECUTIVECOURSE: acourse & bcourse (cyd)
-  - [ ] COURSE2COURSE: prev. course & next course (cyd)
-  - [ ] EVENODDLINK: courseA & courseB (cyd)
+  - [x] CONSECUTIVECOURSE: acourse & bcourse (cyd)
+  - [x] COURSE2COURSE: prev. course & next course (cyd)
+  - [x] EVENODDLINK: courseA & courseB (cyd)
   - [ ] TEACHERTIMEMUTEX: ateacher acourses & bteacher bcourses (pzh)
-  - [ ] TEACHERTIMECLUSTER: [{courses: ... , teacher: ...}] (lzf)
+  - [x] TEACHERTIMECLUSTER: [{courses: ... , teacher: ...}] (lzf)
   - [ ] MOVECOURSE: [pair<class, courses>] (pzh)
-- [ ] 上午下午等：special flags (lzf)
+- [x] 上午下午 (lzf)
   - 99上午；-99下午
+  - 超出课程设定
+- [x] other special flags (lzf)
 - [ ] testing

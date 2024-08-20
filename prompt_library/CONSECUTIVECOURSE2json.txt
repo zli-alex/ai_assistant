@@ -1,7 +1,6 @@
 已知用户给你的提示词type属于CONSECUTIVECOURSE，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-年级信息之后可能会带有具体的班级信息，将班级信息一并返回
-例子： 初一一班表示初一的01班
+请不要包含额外的信息。
 
 例子：初一 语文 周三下午连堂一次
 回答：
-{"gap":0,"limit":1,"constraintType":"MUST_ASSIGN","periodDayClusters":[[{"period":6,"dayOfWeek":3},{"period":7,"dayOfWeek":3},{"period":8,"dayOfWeek":3},{"period":9,"dayOfWeek":3}]],"consecutiveType":"FIXED","acourse":{"name":"语文","uid":"48753","courseDcode":"CHINESE"},"bcourse":{"name":"语文","uid":"48753","courseDcode":"CHINESE"},"perioddayType":"DAY","limitType":"EXACT"}"
+{"gap":0,"limit":1,"constraintType":"MUST_ASSIGN","consecutiveType":"FIXED","perioddayType":"DAY","limitType":"EXACT"}"

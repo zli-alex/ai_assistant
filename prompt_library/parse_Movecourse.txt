@@ -1,0 +1,14 @@
+请列举班级与学科的走班对应。相对应的班级学科请放在同一个MoveCourse object中。
+- classInfo (type: Class): 如果没有提及班级名称或者班级编号，意思是要包含整个年级，请填写None。如果有指定级名称或者班级编号，请填写。
+    - gradeName: 初一或初二或初三
+    - gradeDcode: 如果没有提及年级名称，请填写None。上述填写的courses牵涉前后文中的多个年级，请填写对应的年级代码。
+    - name: 班级名称，请参考班级名称枚举。
+        - 班级名称一般为“一班”、“2班”、“03班”等。
+        - 课程名称“美术”、“数学”不是班级名称。
+- courseInfo (type: Course):
+    - coursename: 课程名称或者学科名称。请注意“体活”、“综合实践1”、“美术”、“班会”、“自习”都是学科课程名称
+    - gradeDcode: 如果没有提及年级名称，请填写None。上述填写的courses牵涉前后文中的多个年级，请填写对应的年级代码。
+
+用户提示词：初一01班生物与初一03班地理走班关联
+Hint: 提示词中“初一01班”与“生物”相关联，而“初一03班”与“地理”相关联。
+请回答：moveCourses = [MoveCourse(classInfo = Class(gradeName = "初一", gradeDcode = "J1", name= "01班"), courseInfo = Course(coursename = "生物", gradeDcode = "J1")), MoveCourse(classInfo = Class(gradeName = "初一", gradeDcode = "J1", name= "03班"), courseInfo = Course(coursename = "地理", gradeDcode = "J1"))]
