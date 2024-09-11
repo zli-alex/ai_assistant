@@ -22,3 +22,6 @@ __pycache__
 *.env
 
 output_list.json
+*.zip
+
+tests/test_actual_outputs

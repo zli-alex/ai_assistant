@@ -1,5 +1,0 @@
-已知用户给你的提示词type属于TEACHERTIMEMUTEX，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-
-例子：钟敏 张慧 不排同一节
-回答：
-{"mutexType":"ALL"}

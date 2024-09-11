@@ -1,5 +1,0 @@
-已知用户给你的提示词type属于COURSE2COURSE，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-
-例子：初一 综合实践1与综合实践2不排同一天
-回答：
-{"constraintType":"MUST_ASSIGN","gap":9,"frequency":0}"

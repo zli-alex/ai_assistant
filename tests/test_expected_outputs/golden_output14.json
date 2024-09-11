@@ -1,0 +1,329 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSEPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "limits": 4,
+            "maxlimits": -1,
+            "periodDays": [
+                {
+                    "period": 99,
+                    "dayOfWeek": -1
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初一",
+                    "name": "初一01班",
+                    "alias": "",
+                    "uid": "37716",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一02班",
+                    "alias": "",
+                    "uid": "37686",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一03班",
+                    "alias": "",
+                    "uid": "37579",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一04班",
+                    "alias": "",
+                    "uid": "37580",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一05班",
+                    "alias": "",
+                    "uid": "37581",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一06班",
+                    "alias": "",
+                    "uid": "37582",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一07班",
+                    "alias": "",
+                    "uid": "37583",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一08班",
+                    "alias": "",
+                    "uid": "37584",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一09班",
+                    "alias": "",
+                    "uid": "37585",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一10班",
+                    "alias": "",
+                    "uid": "37586",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一11班",
+                    "alias": "",
+                    "uid": "37587",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一12班",
+                    "alias": "",
+                    "uid": "37588",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "语文",
+                    "uid": "48753",
+                    "courseDcode": "CHINESE"
+                }
+            ]
+        }
+    },
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSEPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "limits": 4,
+            "maxlimits": -1,
+            "periodDays": [
+                {
+                    "period": 99,
+                    "dayOfWeek": -1
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初一",
+                    "name": "初一01班",
+                    "alias": "",
+                    "uid": "37716",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一02班",
+                    "alias": "",
+                    "uid": "37686",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一03班",
+                    "alias": "",
+                    "uid": "37579",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一04班",
+                    "alias": "",
+                    "uid": "37580",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一05班",
+                    "alias": "",
+                    "uid": "37581",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一06班",
+                    "alias": "",
+                    "uid": "37582",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一07班",
+                    "alias": "",
+                    "uid": "37583",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一08班",
+                    "alias": "",
+                    "uid": "37584",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一09班",
+                    "alias": "",
+                    "uid": "37585",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一10班",
+                    "alias": "",
+                    "uid": "37586",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一11班",
+                    "alias": "",
+                    "uid": "37587",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一12班",
+                    "alias": "",
+                    "uid": "37588",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "数学",
+                    "uid": "48754",
+                    "courseDcode": "MATH"
+                }
+            ]
+        }
+    },
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSEPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "limits": 4,
+            "maxlimits": -1,
+            "periodDays": [
+                {
+                    "period": 99,
+                    "dayOfWeek": -1
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初一",
+                    "name": "初一01班",
+                    "alias": "",
+                    "uid": "37716",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一02班",
+                    "alias": "",
+                    "uid": "37686",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一03班",
+                    "alias": "",
+                    "uid": "37579",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一04班",
+                    "alias": "",
+                    "uid": "37580",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一05班",
+                    "alias": "",
+                    "uid": "37581",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一06班",
+                    "alias": "",
+                    "uid": "37582",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一07班",
+                    "alias": "",
+                    "uid": "37583",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一08班",
+                    "alias": "",
+                    "uid": "37584",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一09班",
+                    "alias": "",
+                    "uid": "37585",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一10班",
+                    "alias": "",
+                    "uid": "37586",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一11班",
+                    "alias": "",
+                    "uid": "37587",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一12班",
+                    "alias": "",
+                    "uid": "37588",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "英语",
+                    "uid": "48755",
+                    "courseDcode": "ENGLISH"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,16 @@
+请总结排课数量限制信息。排课节数限制的格式常为“最多”、“最少”、“必排几节”。
+- 请在"limits"中填写必排结束或者最少排课节数信息。如果未提及填-1。
+- 请在"maxlimits"中填写最多排课数量信息。如果未提及填-1。
+
+请注意特殊情况：
+如果type为CONSECUTIVECOURSE，或者COURSESAMETIMELIMIT，只用回答limit。
+例：用户提示词：“初一 语文 周三下午连堂一次”，并已知type是“CONSECUTIVECOURSE”，请回答ScheduleLimits(limits = 1, maxlimits = None)
+例：用户提示词：“初二初三 美术 同一节课最多2个班”，并已知type是“COURSESAMETIMELIMIT”，请回答ScheduleLimits(limits = 2, maxlimits = None)
+
+其余为一般情况，都要回答。请参考如下案例：
+例：用户提示词：“初三 美术 周二周三每天最少排一节”，请回答ScheduleLimits(limits = 1, maxlimits = -1)
+例：用户提示词：“初一 化学 周四第八节;周五第九节不排”，请回答ScheduleLimits(limits = 1, maxlimits = -1) 备注：“不排”就请按此输出
+例：用户提示词：“初一 数学老师 周五下午 不排”，请回答ScheduleLimits(limits = 1, maxlimits = -1) 备注：“不排”就请按此输出
+例：用户提示词：“物理老师 整个周第三节 最多排四节”，请回答ScheduleLimits(limits = -1, maxlimits = 4)
+例：用户提示词：“初三 美术 周二周三每天最少排一节”，请回答ScheduleLimits(limits = 1, maxlimits = -1)
+例：用户提示词：“初一 语文老师 周一第六节 必排”，请回答ScheduleLimits(limits = -1, maxlimits = -1) 备注：必排但是并未限制。所以都是-1

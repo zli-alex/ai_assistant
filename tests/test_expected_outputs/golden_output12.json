@@ -1,0 +1,202 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSEPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "periodDays": [
+                {
+                    "period": -99,
+                    "dayOfWeek": -1
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初一",
+                    "name": "初一01班",
+                    "alias": "",
+                    "uid": "37716",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一02班",
+                    "alias": "",
+                    "uid": "37686",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一03班",
+                    "alias": "",
+                    "uid": "37579",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一04班",
+                    "alias": "",
+                    "uid": "37580",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一05班",
+                    "alias": "",
+                    "uid": "37581",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一06班",
+                    "alias": "",
+                    "uid": "37582",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一07班",
+                    "alias": "",
+                    "uid": "37583",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一08班",
+                    "alias": "",
+                    "uid": "37584",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一09班",
+                    "alias": "",
+                    "uid": "37585",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一10班",
+                    "alias": "",
+                    "uid": "37586",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一11班",
+                    "alias": "",
+                    "uid": "37587",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一12班",
+                    "alias": "",
+                    "uid": "37588",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "劳动",
+                    "uid": "48931",
+                    "courseDcode": "OTHERS"
+                }
+            ]
+        }
+    },
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSEPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "periodDays": [
+                {
+                    "period": -99,
+                    "dayOfWeek": -1
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初二",
+                    "name": "初二01班",
+                    "alias": "",
+                    "uid": "37589",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二02班",
+                    "alias": "",
+                    "uid": "37590",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二03班",
+                    "alias": "",
+                    "uid": "37591",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二04班",
+                    "alias": "",
+                    "uid": "37592",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二05班",
+                    "alias": "",
+                    "uid": "37593",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二06班",
+                    "alias": "",
+                    "uid": "37594",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二07班",
+                    "alias": "",
+                    "uid": "37595",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二08班",
+                    "alias": "",
+                    "uid": "37596",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二09班",
+                    "alias": "",
+                    "uid": "37597",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初二",
+                    "name": "初二10班",
+                    "alias": "",
+                    "uid": "37598",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "劳动",
+                    "uid": "48934",
+                    "courseDcode": "OTHERS"
+                }
+            ]
+        }
+    }
+]

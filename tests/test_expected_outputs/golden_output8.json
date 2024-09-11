@@ -1,0 +1,95 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSEPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "periodDays": [
+                {
+                    "period": 99,
+                    "dayOfWeek": -1
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初三",
+                    "name": "初三01班",
+                    "alias": "",
+                    "uid": "37599",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三02班",
+                    "alias": "",
+                    "uid": "37600",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三03班",
+                    "alias": "",
+                    "uid": "37601",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三04班",
+                    "alias": "",
+                    "uid": "37602",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三05班",
+                    "alias": "",
+                    "uid": "37603",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三06班",
+                    "alias": "",
+                    "uid": "37604",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三07班",
+                    "alias": "",
+                    "uid": "37605",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三08班",
+                    "alias": "",
+                    "uid": "37606",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三09班",
+                    "alias": "",
+                    "uid": "37607",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初三",
+                    "name": "初三10班",
+                    "alias": "",
+                    "uid": "37608",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "数学",
+                    "uid": "48943",
+                    "courseDcode": "MATH"
+                }
+            ]
+        }
+    }
+]

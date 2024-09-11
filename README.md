@@ -27,40 +27,56 @@ Before run, prepare your course scheduling information and put it in `inputs/inp
 }
 ```
 
-And then, you can run:
-```
+And then, step into `./source/` and you can run:
+```bash
 python3 schedule_chatbot.py
 ```
 
-And then, you would enter course scheduling information in chinese when prompted:
-```
-请输入您的排课需求：<您的需求>
+## Testing
 
+Design test inputs and store it in `./tests/test_inputs/`
+```json
+{
+    "input_info": "初一初二初三语文 连堂1次 放在周三或周四的下午"
+}
 ```
+
+Add you desired output to `./tests/test_expected_outputs/`.
+
+Add a new test case to `./source/test_schedule_chatbot.py` with the following structure:
+```
+def test_<name>(self):
+    input_name = "<input_filename>"
+    actual_output_name = "<output_filename>"
+    expected_output_name = "<golden_filename>"
+    expected_json, actual_json = run_and_compare_helper(input_name, actual_output_name, expected_output_name)
+    self.assertEqual(expected_json, actual_json)
+```
+
+Then, in terminal, from `./source/` folder, run:
+```bash
+python3 ./schedule_chatbot.py
+```
+
+## Code Flowchart
+
+> **Remarks**
+>
+> Processes in green utilizes LLM for information parsing
+
+### Main code (schedule_chatbot.py) flow chart
+<div style="text-align: center;">
+<img src="./images/chatbot_flowchart.png" alt="Main code Flowchart" style="width:50%;">
+</div>
+
+### Get JSON (generate_json_by_info_type.py) flow chart
+<div style="text-align: center;">
+<img src="./images/getjson_flowchart.png" alt="Main code Flowchart" style="width:70%;">
+</div>
+
+## File Structure
+![file structure](./images/file_structure.png)
 
 ## TODO's:
-- [x] config file
-- [x] switch to pandas
-  - get_courses_info: columns: ['gradeDcode', 'name', 'uid', 'courseDcode']
-  - get_classes_info: columns: ['gradeDcode', 'gradeName', 'name', 'alias', 'uid', 'type']
-  - get_teachers_info: columns: ['gradeDecode', 'id', 'teachType', 'teacherUserName', 'courseRank',
-       'courseHour', 'evenOddHours', 'isMultiClass', 'code', 'coursename',
-       'courseuid', 'coursecourseDcode', **'teachername'**, 'teacheruid',
-       'clazzname', 'clazzuid']
-- [x] pass teacher names to openai (lzf)
-  - if teacher DNE
-- [x] pass courses names to openai (lzf)
-  - if coureses DNE
-- [x] structured output if we demand True/False
-- [ ] special cases:
-  - [x] CONSECUTIVECOURSE: acourse & bcourse (cyd)
-  - [x] COURSE2COURSE: prev. course & next course (cyd)
-  - [x] EVENODDLINK: courseA & courseB (cyd)
-  - [ ] TEACHERTIMEMUTEX: ateacher acourses & bteacher bcourses (pzh)
-  - [x] TEACHERTIMECLUSTER: [{courses: ... , teacher: ...}] (lzf)
-  - [ ] MOVECOURSE: [pair<class, courses>] (pzh)
-- [x] 上午下午 (lzf)
-  - 99上午；-99下午
-  - 超出课程设定
-- [x] other special flags (lzf)
-- [ ] testing
+- [ ] if teacher time, do an extra check if a teacher exists in the prompt
+- [ ] Fix limit information

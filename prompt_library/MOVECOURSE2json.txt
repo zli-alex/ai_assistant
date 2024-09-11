@@ -1,5 +1,0 @@
-已知用户给你的提示词type属于MOVECOURSE，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-
-例子：初一01班生物与初一03班地理走班关联
-回答：
-{"moveCourseDetails":[{"classes":[{"name":"初一01班","uid":"37716"}],"courses":{"name":"生物","uid":"48758"}},{"classes":[{"name":"初一03班","uid":"37579"}],"courses":{"name":"地理","uid":"48761"}}]}

@@ -1,5 +1,0 @@
-已知用户给你的提示词type属于TEACHERTIMECLUSTER，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-
-例子：初二数学老师 不同班级的数学课连着上
-回答：
-{"minConsecutive":2, "maxConsecutive":2, "minClusterSize":2, "maxClusterSize":2}

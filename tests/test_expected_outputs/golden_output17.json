@@ -1,0 +1,29 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "TEACHERTIME",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "teacherType": "TEACHER",
+            "limits": 2,
+            "maxlimits": -1,
+            "periodDays": [
+                {
+                    "period": 5,
+                    "dayOfWeek": 3
+                },
+                {
+                    "period": 6,
+                    "dayOfWeek": 3
+                }
+            ],
+            "teachers": [
+                {
+                    "uid": "361246",
+                    "name": "钟敏"
+                }
+            ]
+        }
+    }
+]

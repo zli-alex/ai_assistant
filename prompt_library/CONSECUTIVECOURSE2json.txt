@@ -1,6 +1,0 @@
-已知用户给你的提示词type属于CONSECUTIVECOURSE，请套用以下的JSON例子，结合课程与班级信息和教师任科信息生成与用户提示词相关的JSON数据。请仅返回JSON数据。
-请不要包含额外的信息。
-
-例子：初一 语文 周三下午连堂一次
-回答：
-{"gap":0,"limit":1,"constraintType":"MUST_ASSIGN","consecutiveType":"FIXED","perioddayType":"DAY","limitType":"EXACT"}"

@@ -1,0 +1,71 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "TEACHERTIMEMUTEX",
+        "constraintJsons": {
+            "mutexType": "ALL",
+            "error" : false,
+            "ateacher": {
+                "uid": "361275",
+                "name": "奚若箐"
+            },
+            "aTeacherId": "361275",
+            "aCourses": [
+                {
+                    "name": "音乐",
+                    "uid": "48766",
+                    "courseDcode": "MUSIC",
+                    "gradeDcode": "J1",
+                    "checked": true
+                },
+                {
+                    "name": "音乐",
+                    "uid": "48785",
+                    "courseDcode": "MUSIC",
+                    "gradeDcode": "J2",
+                    "checked": true
+                },
+                {
+                    "name": "音乐",
+                    "uid": "48801",
+                    "courseDcode": "MUSIC",
+                    "gradeDcode": "J3",
+                    "checked": true
+                }
+            ],
+            "acourse": null,
+            "aCourseId": null,
+            "bteacher": {
+                "uid": "361236",
+                "name": "赵清"
+            },
+            "bTeacherId": "361236",
+            "bCourses": [
+                {
+                    "name": "音乐",
+                    "uid": "48766",
+                    "courseDcode": "MUSIC",
+                    "gradeDcode": "J1",
+                    "checked": true
+                },
+                {
+                    "name": "音乐",
+                    "uid": "48785",
+                    "courseDcode": "MUSIC",
+                    "gradeDcode": "J2",
+                    "checked": true
+                },
+                {
+                    "name": "音乐",
+                    "uid": "48801",
+                    "courseDcode": "MUSIC",
+                    "gradeDcode": "J3",
+                    "checked": true
+                }
+            ],
+            "bcourse": null,
+            "bCourseId": null
+        }
+    }
+]

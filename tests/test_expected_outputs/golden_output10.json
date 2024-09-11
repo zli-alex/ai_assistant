@@ -1,0 +1,66 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "COURSETIME",
+        "constraintJsons": {
+            "constraintType": "MUST_ASSIGN",
+            "limits": 2,
+            "maxlimits": -1,
+            "periodDays": [
+                {
+                    "period": 5,
+                    "dayOfWeek": 3
+                },
+                {
+                    "period": 6,
+                    "dayOfWeek": 3
+                }
+            ],
+            "classes": [
+                {
+                    "gradeName": "初一",
+                    "name": "初一01班",
+                    "alias": "",
+                    "uid": "37716",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一02班",
+                    "alias": "",
+                    "uid": "37686",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一03班",
+                    "alias": "",
+                    "uid": "37579",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一04班",
+                    "alias": "",
+                    "uid": "37580",
+                    "type": "OFFICIAL"
+                },
+                {
+                    "gradeName": "初一",
+                    "name": "初一05班",
+                    "alias": "",
+                    "uid": "37581",
+                    "type": "OFFICIAL"
+                }
+            ],
+            "courses": [
+                {
+                    "name": "体育",
+                    "uid": "48939",
+                    "courseDcode": "SPORTS"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "projectId": 458,
+        "projectScenarioId": 985,
+        "type": "TEACHERPERIODLIMIT",
+        "constraintJsons": {
+            "constraintType": "MUST_AVOID",
+            "teacherType": "TEACHER",
+            "limits": 1,
+            "maxlimits": -1,
+            "periodDays": [
+                {
+                    "period": 1,
+                    "dayOfWeek": -1
+                },
+                {
+                    "period": 9,
+                    "dayOfWeek": -1
+                },
+                {
+                    "period": 10,
+                    "dayOfWeek": -1
+                }
+            ],
+            "teachers": [
+                {
+                    "uid": "361224",
+                    "name": "刘盈"
+                }
+            ]
+        }
+    }
+]
